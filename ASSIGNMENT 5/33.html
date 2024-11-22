@@ -1,0 +1,13 @@
+<input type="text" id="txt">
+<button onclick="validateEmpty()">Validate</button>
+
+<script>
+  function validateEmpty() {
+    let input = document.getElementById("txt");
+    if (input.value.trim() === "") {
+      input.style.border = "2px solid red";
+    } else {
+      input.style.border = "";
+    }
+  }
+</script>

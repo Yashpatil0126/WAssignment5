@@ -1,0 +1,9 @@
+
+    <p id="coordinates"></p>
+
+<script>
+  document.addEventListener("mousemove", function(event) {
+    document.getElementById("coordinates").textContent = `X: ${event.clientX}, Y: ${event.clientY}`;
+  });
+
+</script>

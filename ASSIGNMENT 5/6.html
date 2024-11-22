@@ -1,0 +1,11 @@
+<input type="text" id="myInput">
+<p id="para1"></p>
+<p id="para2"></p>
+
+<script>
+  document.getElementById("myInput").addEventListener("keyup", function() {
+    let inputValue = this.value;
+    document.getElementById("para1").textContent = inputValue.toUpperCase();
+    document.getElementById("para2").textContent = inputValue.toLowerCase();
+  });
+</script>

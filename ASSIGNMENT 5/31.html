@@ -1,0 +1,13 @@
+<input type="text" id="txt1">
+<input type="text" id="txt2">
+<button onclick="addValues()">Add</button>
+<p id="para"></p>
+
+<script>
+  function addValues() {
+    let num1 = Number(document.getElementById("txt1").value);
+    let num2 = Number(document.getElementById("txt2").value);
+    let sum = num1 + num2;
+    document.getElementById("para").textContent = "Sum: " + sum;
+  }
+</script>
